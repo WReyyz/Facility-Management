@@ -5,7 +5,9 @@ import { prisma } from "@/server/db";
 import { Role } from "@prisma/client";
 
 const JWT_SECRET = new TextEncoder().encode(
-  process.env.NEXTAUTH_SECRET || "facility-management-super-secret-key-32-chars-min"
+  process.env.JWT_SECRET ||
+    process.env.NEXTAUTH_SECRET ||
+    "facility-management-super-secret-key-32-chars-min"
 );
 
 export const SESSION_COOKIE_NAME = "facility_session";
