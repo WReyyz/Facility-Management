@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FFFFFF;
+  --bg-sidebar: #F7F7F8;
+  --bg-subtle: #F4F4F5;
+  --bg-active: #EBEBED;
+  --hover: #FAFAFB;
+  --border: #E4E4E7;
+  --border-soft: #EFEFF1;
+  --text: #111113;
+  --text-muted: #6B6B73;
+  --text-faint: #9A9AA2;
+  --primary: #111113;
+  --primary-hover: #2A2A2E;
+  --on-primary: #FFFFFF;
+  --link: #3B6FD4;
+  --progress: #3E7B68;
+  --track: #E4E4E7;
+  --danger-bg: #FDECEC;
+  --danger: #C42B2B;
+  --success-bg: #E3F5E8;
+  --success: #1F7A3D;
+  --info-bg: #E6EEFF;
+  --info: #2B59C3;
+  --warning-bg: #FFF1D6;
+  --warning: #8F5600;
+  --neutral-bg: #F1F1F3;
+  --neutral: #55555D;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+}
+
+@theme {
+  --color-bg: var(--bg);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-bg-active: var(--bg-active);
+  --color-hover: var(--hover);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-link: var(--link);
+  --color-progress: var(--progress);
+  --color-track: var(--track);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger: var(--danger);
+  --color-success-bg: var(--success-bg);
+  --color-success: var(--success);
+  --color-info-bg: var(--info-bg);
+  --color-info: var(--info);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning: var(--warning);
+  --color-neutral-bg: var(--neutral-bg);
+  --color-neutral: var(--neutral);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-pill: 9999px;
+
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html, body, button, input, textarea, select {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}

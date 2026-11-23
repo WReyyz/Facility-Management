@@ -1,0 +1,4 @@
+name,department,stage,status,vendor_name,po_no,po_amount,bast_date,warranty_months
+"Overhaul Chiller Plant Gedung Utama",Utility,OPERATIONS,COMPLETED,"PT Sarana Pendingin",PO-2025-014,185000000,2025-10-15,12
+"Perbaikan Pintu Otomatis Loading Dock",Logistik,PROJECT,IN_PROGRESS,"CV Cipta Karya Persada",PO-2026-002,45000000,,12
+"Pemasangan Lampu LED Highbay Workshop",Facility,PPC,IN_PROGRESS,,,,,
